@@ -1,0 +1,146 @@
+:root {
+    --dark-navy: #24053e; 
+    --lime: #44ffa1;
+    --light-navy: #584d62;
+    --light: #fcf8ff;
+    --white: #fff
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope';
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--dark-navy);
+    text-align: center;
+}
+
+.heading-l, .heading-m, .heading-s {
+    font-family: 'Fraunces';
+}
+
+.heading-l {
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.heading-m {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.heading-s {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.btn-primary {
+    background-color: var(--lime);
+    color: var(--dark-navy);
+
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border: none;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-navy);
+    color: var(--lime);
+    border: 4px solid var(--lime);
+}
+
+.btn-secondary {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    border-bottom: 4px solid var(--lime)
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark-navy);
+    color: var(--lime);
+}
+
+/*
+.curve-svg {
+    fill: var(--dark-navy);
+    width: 100%;
+    position: relative;
+    top: 110px;
+}
+*/
+
+/* Header */
+header {
+    background-color: var(--dark-navy);
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+header h1 {
+    color: var(--white);
+    padding: 1em 0;
+}
+
+.tailored {
+    text-decoration: underline;
+    text-decoration-color: var(--lime);
+}
+
+.header-svg {
+    position: relative;
+    top: 202px;
+    fill: var(--dark-navy);
+    
+}
+
+/* Main Content */
+main {
+    background-color: var(--light);
+}
+
+section {
+    margin-top: 4rem;
+}
+
+main h2 {
+    margin: 2rem 0;
+}
+
+.main-container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    position: relative;
+    top: -80px;
+}
+
+.btn-number {
+    padding: 1.75rem 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--dark-navy);
+    background-color: var(--light);
+}
