@@ -12,48 +12,70 @@
   <title>Frontend Mentor | Workit landing page</title>
 </head>
 <body>
-  <header>
-    <nav>
+  <header class="header-bg">
+    <nav class="outer-container">
       <ul>
         <li><a href="#"><img src="/assets/images/logo-light.svg" alt="logo-light"></a></li>
         <li><a href="#" class="btn-secondary">Apply for access</a></li>
       </ul>
     </nav>
-
-    <h1 class="heading-l">Data <span class="tailored">tailored</span> to your needs.</h1>
-    <button class="btn-primary">Learn more</button>
-    <!--<img src="/assets/images/bottom-header-curve.svg" class="curve-svg">-->
-    <svg viewBox="0 0 100 40" preserveAspectRatio="none" class="header-svg">
-      <path d="M 0,0 L 100,0 Q 50,20 0,0 Z"></path>
-    </svg>
+    <div class="inner-container">
+      <h1 class="">Data <span class="tailored">tailored</span> to your needs.</h1>
+      <button class="btn-primary">Learn more</button>
+    </div>
   </header>
   <main>
-    <div class="main-container">
-      <img src="/assets/images/image-hero.webp" alt="hero image" class="hero-image">
-      <section>
-        <button class="btn-number">1</button>
-        <h2 class="heading-m">Actionable Insights</h2>
-        <p>Optimize your products, improve customer satisfaction and stay ahead of the
-          competition with our product data analytics.
-        </p>
-      </section>
-      <section>
-        <button class="btn-number">2</button>
-        <h2 class="heading-m">Data-driven decisions</h2>
-        <p>Make data-driven decisions with our product data analytics. Our AI-generated reports
-          help you unlock insights hidden in your product data.
-        </p>
-      </section>
-      <section>
-        <button class="btn-number">3</button>
-        <h2 class="heading-m">Always affordable</h2>
-        <p>Always affordable pricing that scales with your business. Get top-quality product
-          data analytics services without hidden costs or unexpected fees.
-        </p>
-      </section>
-    </div>
-    
-  </main>
+    <section class="top-section-bg">
+      <div class="inner-container">
+        <img src="/assets/images/image-hero.webp" alt="hero image" class="hero-image">
+      </div>
+      <div class="outer-container">
+        <article>
+          <span class="info-number">1</span>
+          <h2>Actionable Insights</h2>
+          <p>Optimize your products, improve customer satisfaction and stay ahead of the
+            competition with our product data analytics.
+          </p>
+        </article>
+        <article>
+          <span class="info-number">2</span>
+          <h2>Data-driven decisions</h2>
+          <p>Make data-driven decisions with our product data analytics. Our AI-generated reports
+            help you unlock insights hidden in your product data.
+          </p>
+        </article>
+        <article>
+          <span class="info-number">3</span>
+          <h2>Always affordable</h2>
+          <p>Always affordable pricing that scales with your business. Get top-quality product
+            data analytics services without hidden costs or unexpected fees.
+          </p>
+        </article>
+      </div>
+    </section>
 
+    <section class="top-margin">
+      <div class="inner-container">
+        <img src="/assets/images/image-founder.webp" alt="photo of the founder" class="founder-image">
+      </div>
+      <div class="outer-container about-dev">
+        <h2>Be the first to test</h2>
+        <p>Hi, I'm Louis Graham, the founder of the company.
+          Book a demo call with me to become a beta tester
+          for out app and kickstart your company. Apply for 
+          access below and I'll be in touch to schedule a call.
+        </p>
+        <button class="btn-primary">Apply for access</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img src="/assets/images/logo-dark.svg" alt="logo-dark">
+    <div class="icons">
+      <img src="/assets/images/icon-facebook.svg" alt="facebook icon">
+      <img src="/assets/images/icon-twitter.svg" alt="twitter icon">
+      <img src="/assets/images/icon-instagram.svg" alt="instagram icon">
+    </div>
+  </footer>
 </body>
 </html>
