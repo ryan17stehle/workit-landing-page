@@ -146,7 +146,7 @@ img {
 
 /* About Developer */
 .dev-container {
-    margin: 5rem auto;
+    margin: 4rem auto 0;
 }
 
 .about-dev {
@@ -180,7 +180,7 @@ img {
 }
 
 /* Tablet (Regular) */
-@media (481px <= width <= 768px) {
+@media (481px <= width <= 1024px) {
     h1, h2 {
         font-size: var(--heading-m);
         line-height: var(--line-height-m);
@@ -221,6 +221,26 @@ img {
         flex-direction: column;
         align-items: flex-end;
     }
+    
+    .start {
+        margin: 0;
+        align-self: flex-start;
+    }
+    
+    .about-dev {
+        width: 60%;
+        top: -150px;
+    }
+}
+
+/* Laptop & Desktop */
+@media (1025px <= width) {
+    .dev-container {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
     .start {
         margin: 0;
@@ -229,12 +249,16 @@ img {
 
     .about-dev {
         width: 60%;
-        top: -150px;
+        top: -250px;
     }
-    
-}
 
-/* Laptop & Desktop */
-@media (1025px <= width) {
-    
+    .large-flex {
+        display: flex;
+        gap: 2rem;
+    }
+
+    h1, h2 {
+        font-size: var(--heading-l);
+        line-height: var(--line-height-l)
+    }
 }
