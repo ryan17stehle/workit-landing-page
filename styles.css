@@ -64,6 +64,10 @@ h1, h2 {
     color: var(--eucaplyptus);
 }
 
+.hidden {
+    display: none;
+}
+
 /* Header */
 .header-bg {
     background-color: var(--dark-purple);
@@ -72,7 +76,7 @@ h1, h2 {
 }
 
 .outer-container {
-    width: 90vw;
+    width: clamp(320px, 90vw, 1200px);
     margin: 0 auto;
 }
 
@@ -91,7 +95,7 @@ a {
 }
 
 .inner-container {
-    width: 80vw;
+    width: clamp(280px, 80vw, 480px);
     margin: 0 auto;
 }
 
@@ -117,17 +121,19 @@ article {
 }
 
 h2 {
-    margin: 2rem 0;
+    margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
 }
 
 .hero-image {
-    max-width: 100%;
     position: relative;
     top: -100px;
 }
 
 .info-number {
-    display: inline-block;
     height: 42px;
     width: 50px;
     margin: 0 auto;
@@ -139,12 +145,8 @@ h2 {
 }
 
 /* About Developer */
-.top-margin {
-    margin-top: 5rem;
-}
-
-.founder-image {
-    max-width: 100%;
+.dev-container {
+    margin: 5rem auto;
 }
 
 .about-dev {
@@ -152,7 +154,7 @@ h2 {
     color: var(--white);
     padding: 2rem 0;
     position: relative;
-    top: -100px;
+    top: -75px;
 }
 
 .about-dev h2,
@@ -167,4 +169,72 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 2rem;
+}
+
+/* Media Queries */
+@media (481px <= width) {
+    .hidden {
+        display: inline;
+        position: absolute;
+    }
+}
+
+/* Tablet (Regular) */
+@media (481px <= width <= 768px) {
+    h1, h2 {
+        font-size: var(--heading-m);
+        line-height: var(--line-height-m);
+    }
+
+    .inner-container {
+        width: 60%;
+    }
+
+    .tablet-flex-outer {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /*
+    .pattern-1 {
+        top: 50px;
+        left: -240px;
+    }
+
+    .pattern-2 {
+        top: 240px;
+        right: -50px;
+    }
+
+    .pattern-3 {
+        top: 2150px;
+        right: 50px;
+    }
+    */
+}
+
+/* Tablet (Landscape) */
+@media (769px <= width <= 1024px) {
+    .dev-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .start {
+        margin: 0;
+        align-self: flex-start;
+    }
+
+    .about-dev {
+        width: 60%;
+        top: -150px;
+    }
+    
+}
+
+/* Laptop & Desktop */
+@media (1025px <= width) {
+    
 }
